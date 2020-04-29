@@ -16,5 +16,12 @@
                 </arguments>
             </block>
         </referenceContainer>
+
+        <referenceContainer name="top.links">
+            <block class="Magento\Framework\View\Element\Template" 
+                   name="Magnat_Test_Link"
+                   template="Magnat_Test::link.phtml" >
+            </block>
+        </referenceContainer>
     </body>
 </page>
