@@ -6,5 +6,11 @@
                    name="Magnat_Test_Index" 
                    template="Magnat_Test::index.phtml" />
         </referenceContainer>
+
+        <referenceContainer name="content.top">
+            <block class="Magento\Framework\View\Element\Template" 
+                   name="Magnat_Test_Text" 
+                   template="Magnat_Test::text.phtml" />
+        </referenceContainer>
     </body>
 </page>
