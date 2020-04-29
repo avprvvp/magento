@@ -1,3 +1,13 @@
-<div class="text123">
+<?php
+
+$cssClass = $this->getcssClass();
+
+?>
+
+<div class="<?= $block->escapeHtmlAttr($cssClass) ?>">
     <h1>TEXT TEXT TEXT</h1>
 </div>
+
+
+
+

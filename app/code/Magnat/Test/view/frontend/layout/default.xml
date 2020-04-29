@@ -10,7 +10,11 @@
         <referenceContainer name="content.top">
             <block class="Magento\Framework\View\Element\Template" 
                    name="Magnat_Test_Text" 
-                   template="Magnat_Test::text.phtml" />
+                   template="Magnat_Test::text.phtml" >
+                <arguments>
+                    <argument name="css_class" xsi:type="string">text123</argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>
