@@ -11,4 +11,10 @@
                 sortOrder="1"
                 disabled="false"/>
     </type>
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="Breadcrumbs"
+                type="Magnat\Price\Plugin\Breadcrumbs"
+                sortOrder="1"
+                disabled="false"/>
+    </type>
 </config>
