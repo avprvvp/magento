@@ -5,9 +5,9 @@
                 sortOrder="1"
                 disabled="false"/>
     </type>
-    <type name="Magento\Catalog\Api\Data\ProductInterface">
+    <type name="Magento\Catalog\Model\Product">
         <plugin name="Price"
-                type="Magnat\Price\Plugin\ProductInterface"
+                type="Magnat\Price\Plugin\Price"
                 sortOrder="1"
                 disabled="false"/>
     </type>
