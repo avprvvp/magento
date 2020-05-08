@@ -9,11 +9,6 @@ use Magento\Framework\Event\Observer;
 class MyObserver implements ObserverInterface
 {
     /**
-     * @var PsrLoggerInterface
-     */
-    private $logger;
-
-    /**
      * MyObserver constructor.
      *
      * @param PsrLoggerInterface $logger
@@ -30,9 +25,7 @@ class MyObserver implements ObserverInterface
      */
     public function execute(Observer $observer)
     {
-        $path = $observer->getEvent()->getRequest()->getPathInfo();
-        $this->_logger->notice($path);
-
-        return $this;
+        $url = $observer->getEvent()->getRequest()->getPathInfo();
+        $this->_logger->notice('magento.loc' . $url);
     }
 }
