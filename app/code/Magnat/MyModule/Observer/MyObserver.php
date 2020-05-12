@@ -31,6 +31,6 @@ class MyObserver implements ObserverInterface
     public function execute(Observer $observer)
     {
         $url = $observer->getEvent()->getRequest()->getPathInfo();
-        $this->logger->notice('magento.loc' . $url);
+        $this->logger->notice($url);
     }
 }
