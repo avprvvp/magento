@@ -243,6 +243,7 @@ return [
         'Magnat_HtmlToLog' => 1,
         'Magnat_MyModule' => 1,
         'Magnat_Price' => 1,
+        'Magnat_RouterToLog' => 1,
         'Magnat_Test' => 1,
         'Magnat_Test2' => 1,
         'Temando_Shipping' => 1,
