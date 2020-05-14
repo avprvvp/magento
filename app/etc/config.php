@@ -240,6 +240,7 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'Magnat_HelloWorld' => 1,
         'Magnat_HtmlToLog' => 1,
         'Magnat_MyModule' => 1,
         'Magnat_Price' => 1,
