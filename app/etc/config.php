@@ -243,6 +243,7 @@ return [
         'Magnat_HelloWorld' => 1,
         'Magnat_HtmlToLog' => 1,
         'Magnat_MyModule' => 1,
+        'Magnat_NewModule' => 1,
         'Magnat_Price' => 1,
         'Magnat_RouterToLog' => 1,
         'Magnat_Test' => 1,
