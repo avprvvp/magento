@@ -2,7 +2,7 @@
 
 namespace Magnat\Price\Plugin\Block\Html;
 
-class Footer 
+class Footer
 {
     public function aroundGetCopyright($result)
     {

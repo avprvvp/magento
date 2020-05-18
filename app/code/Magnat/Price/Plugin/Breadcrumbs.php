@@ -10,7 +10,8 @@ class Breadcrumbs
      * @param array $crumbInfo
      * @return array
      */
-    public function beforeAddCrumb(\Magento\Theme\Block\Html\Breadcrumbs $subject, $crumbName, $crumbInfo) {
+    public function beforeAddCrumb(\Magento\Theme\Block\Html\Breadcrumbs $subject, $crumbName, $crumbInfo)
+    {
 
         $crumbInfo['label'] = $crumbInfo['label'].'(!)';
 

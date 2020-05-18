@@ -7,9 +7,9 @@ use \Magento\Framework\Controller\Result\RawFactory;
 use \Magento\Framework\App\Action\Context;
 use \Magento\Framework\Controller\Result\Redirect;
 
-
 class Index extends Action
-{   
+{
+
     /**
      * @var RawFactory
      */
@@ -24,8 +24,7 @@ class Index extends Action
         Context $context,
         RawFactory $resultRawFactory,
         Redirect $resultRedirect
-    )
-    {
+    ) {
         $this->resultRawFactory = $resultRawFactory;
         $this->resultRedirect = $resultRedirect;
         return parent::__construct($context);

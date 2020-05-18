@@ -22,13 +22,12 @@ class NewView extends View
         ViewHelper $viewHelper,
         PageFactory $resultPageFactory,
         ForwardFactory $resultForwardFactory
-    
     ) {
         parent::__construct($context, $viewHelper, $resultForwardFactory, $resultPageFactory);
         $this->resultRaw = $resultRaw;
     }
 
-    public function execute ()
+    public function execute()
     {
         return $this->resultRaw->setContents('some raw');
     }

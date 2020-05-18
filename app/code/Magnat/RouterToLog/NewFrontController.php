@@ -37,8 +37,7 @@ class NewFrontController extends FrontController
 
     public function dispatch(\Magento\Framework\App\RequestInterface $request)
     {
-        foreach ($this->_routerList as $router)
-        {
+        foreach ($this->_routerList as $router) {
             $this->logger->notice(get_class($router));
         }
         return FrontController::dispatch($request);

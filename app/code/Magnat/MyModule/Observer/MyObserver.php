@@ -20,8 +20,7 @@ class MyObserver implements ObserverInterface
      */
     public function __construct(
         PsrLoggerInterface $logger
-    )
-    {        
+    ) {
         $this->logger = $logger;
     }
 

@@ -20,8 +20,7 @@ class RecordHtml implements ObserverInterface
      */
     public function __construct(
         PsrLoggerInterface $logger
-    )
-    {        
+    ) {
         $this->logger = $logger;
     }
 
