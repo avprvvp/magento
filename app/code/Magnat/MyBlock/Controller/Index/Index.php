@@ -21,7 +21,9 @@ class Index extends Action
     {
         $html = $this->_resultPageFactory->create()
             ->getLayout()
-            ->createBlock('Magnat\MyBlock\Block\Index')
+            // ->createBlock('Magnat\MyBlock\Block\Index')
+            ->createBlock('Magento\Framework\View\Element\Text')
+            ->setText('TestTest!!')
             ->toHtml();
         return $this->getResponse()->setBody($html);
     }
