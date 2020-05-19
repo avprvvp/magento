@@ -242,6 +242,7 @@ return [
         'MSP_TwoFactorAuth' => 1,
         'Magnat_HelloWorld' => 1,
         'Magnat_HtmlToLog' => 1,
+        'Magnat_MyBlock' => 1,
         'Magnat_MyModule' => 1,
         'Magnat_NewAdmin' => 1,
         'Magnat_NewModule' => 1,
