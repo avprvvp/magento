@@ -19,18 +19,17 @@ class MyObserver implements ObserverInterface
     public function execute(Observer $observer)
     {
         $product = $observer->getEvent()->getProduct();
-        $attributes = $product->getAttributes();
-        $values = [];
-        foreach ($attributes as $attribute) {
-            $values[] = $attribute->getName();
+        $attributes = [];
+        foreach ($product->getAttributes() as $attribute) {
+            $attributes[] = $attribute->getName();
         }
-        foreach ($values as $value) {
+        foreach ($attributes as $$attribute) {
             $productName = $product['name'];
-            $old = $product->getOrigData($value);
-            $new = $product->getData($value);
+            $old = $product->getOrigData($$attribute);
+            $new = $product->getData($$attribute);
 
             if (!is_array($old) && !is_array($new) && $old !== $new) {
-                $event = "Change $value $old => $new in $productName";
+                $event = "Change $attribute $old => $new in $productName";
                 $this->logger->notice($event);
             }
         }
