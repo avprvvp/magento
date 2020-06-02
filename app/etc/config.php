@@ -241,6 +241,7 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Magnat_ActionName' => 0,
+        'Magnat_Database' => 1,
         'Magnat_HelloWorld' => 0,
         'Magnat_HelloWorldAtCart' => 0,
         'Magnat_HtmlToLog' => 0,
