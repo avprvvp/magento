@@ -245,6 +245,7 @@ return [
         'Magnat_HelloWorld' => 0,
         'Magnat_HelloWorldAtCart' => 0,
         'Magnat_HtmlToLog' => 0,
+        'Magnat_MultiselectAttribute' => 1,
         'Magnat_MyBlock' => 0,
         'Magnat_MyModule' => 0,
         'Magnat_MyTemplateBlock' => 0,
