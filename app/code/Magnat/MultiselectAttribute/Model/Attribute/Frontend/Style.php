@@ -13,14 +13,15 @@ class Style extends AbstractFrontend
         $attr = $object->getData($this->getAttribute()->getAttributeCode());
         $attrOption = $this->getOption($attr);
 
-        if (is_string($attrOption)) {
-            $result = $attrOption;
-        } else {
-            foreach ($attrOption as $option) {
-                $result = $result . '<li><b>' . $option . '</b></li>';
+        if ($attrOption) {
+            if (is_string($attrOption)) {
+                $result = $attrOption;
+            } else {
+                foreach ($attrOption as $option) {
+                    $result = $result . '<li><b>' . $option . '</b></li>';
+                }
+                return '<ul>' . $result . '</ul>';
             }
         }
-
-        return '<ul>' . $result . '</ul>';
     }
 }
