@@ -1,0 +1,9 @@
+<?php
+
+foreach ($block->getProductList() as $product) {
+    if ($product) {
+        echo $product . '<br />';
+    } else {
+        echo "No product found!";
+    }
+}

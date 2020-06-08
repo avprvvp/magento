@@ -254,6 +254,7 @@ return [
         'Magnat_NewModule' => 0,
         'Magnat_Price' => 0,
         'Magnat_ProductAttr' => 1,
+        'Magnat_ProductList' => 1,
         'Magnat_ProductObserver' => 0,
         'Magnat_RouterToLog' => 0,
         'Magnat_ShowAttributes' => 0,
