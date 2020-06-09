@@ -57,13 +57,6 @@ class Product extends \Magento\Framework\View\Element\Template
             ->getList($searchCriteria)
             ->getItems();
 
-        $result = [];
-        foreach ($products as $product) {
-            $productName = $product->getName();
-            $productPrice = $product->getPrice();
-            $result[] = $productName . ' => ' . $productPrice;
-        }
-
-        return $result;
+        return $products;
     }
 }

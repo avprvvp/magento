@@ -2,7 +2,11 @@
 
 foreach ($block->getProductList() as $product) {
     if ($product) {
-        echo $product . '<br />';
+        $result = "";
+        $productName = $product->getName();
+        $productPrice = $product->getPrice();
+        $result = $productName . ' => ' . $productPrice;
+        echo $result . '<br />';
     } else {
         echo "No product found!";
     }
