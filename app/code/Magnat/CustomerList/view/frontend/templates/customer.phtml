@@ -1,0 +1,14 @@
+<?php
+
+foreach ($block->getCustomerList() as $customer) {
+    if ($customer) {
+        $result = "";
+        $customerName = '<b>' . $customer->getFirstName() . '</b>';
+        $customerEmail = '<b>' . $customer->getEmail() . '</b>';
+        $customerClass = '<b>' . get_class($customer) . '</b>';
+        $result = 'name: ' . $customerName . ' email: ' . $customerEmail . ' class: ' . $customerClass;
+        echo $result . '<br />';
+    } else {
+        echo "No customer found!";
+    }
+}

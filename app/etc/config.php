@@ -242,6 +242,7 @@ return [
         'MSP_TwoFactorAuth' => 1,
         'Magnat_ActionName' => 0,
         'Magnat_CustomerAttr' => 1,
+        'Magnat_CustomerList' => 1,
         'Magnat_Database' => 1,
         'Magnat_HelloWorld' => 0,
         'Magnat_HelloWorldAtCart' => 0,
